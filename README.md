@@ -33,6 +33,7 @@ This has the the same effect as setting to true mock_sensor_commands in the ros2
 
 This is a minimal example of a System that uses this interface, declared inside a urdf
 
+```xml
 <ros2_control name="my_robot" type="system">
   <hardware>
     <plugin>coppelia_components/TopicSystem</plugin>
@@ -45,3 +46,4 @@ This is a minimal example of a System that uses this interface, declared inside 
     <state_interface name="velocity"/>
   </joint>
 </ros2_control>
+```
