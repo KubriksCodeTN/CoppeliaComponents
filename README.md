@@ -33,7 +33,7 @@ This has the the same effect as setting to true mock_sensor_commands in the ros2
 
 This is a minimal example of a System that uses this interface, declared inside a urdf
 
-::
+'''xml
 
    <ros2_control name="my_robot" type="system">
         <hardware>
@@ -50,4 +50,4 @@ This is a minimal example of a System that uses this interface, declared inside 
         </joint>
    </ros2_control>
 
-::
+'''
