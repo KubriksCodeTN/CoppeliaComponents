@@ -1,0 +1,10 @@
+<library path="coppelia_components">
+  <class name="coppelia_components/TopicSystem"
+         type="coppelia_components::TopicSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Generic hardware interface to integrate CoppeliaSim in ros control using topics
+      Supports sensors and the standard interfaces
+    </description>
+  </class>
+</library>
