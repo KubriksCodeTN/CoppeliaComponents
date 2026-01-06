@@ -33,21 +33,15 @@ This has the the same effect as setting to true mock_sensor_commands in the ros2
 
 This is a minimal example of a System that uses this interface, declared inside a urdf
 
-'''xml
-
-   <ros2_control name="my_robot" type="system">
-        <hardware>
-            <plugin>coppelia_components/TopicSystem</plugin>
-            <param name="joint_cmd_topic">coppelia_set</param>
-            <param name="joint_state_topic">coppelia_joint</param>
-        </hardware>
-        <joint name="my_robot_joint">
-            <command_interface name="position"/>
-            <state_interface name="position">
-                <param name="initial_value">0.0</param>
-            </state_interface>
-            <state_interface name="velocity"/>
-        </joint>
-   </ros2_control>
-
-'''
+<ros2_control name="my_robot" type="system">
+  <hardware>
+    <plugin>coppelia_components/TopicSystem</plugin>
+  </hardware>
+  <joint name="coppelia_joint">
+    <command_interface name="position"/>
+    <state_interface name="position">
+      <param name="initial_value">0.0</param>
+    </state_interface>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
